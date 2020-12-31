@@ -1,0 +1,33 @@
+body {
+    background-color: #D9D0BF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 20px 0 20px;
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+    color: #BF0426;
+}
+
+.hero {
+    background-image: url("./images/ella-olsson-4dQiaWKiL-Y-unsplash.jpg");
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Bungee Inline', cursive;
+    color: #BF0426;
+}
