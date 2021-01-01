@@ -1,6 +1,7 @@
 body {
     background-color: #D9D0BF;
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
 }
 
 nav ul {
@@ -13,6 +14,15 @@ li {
     list-style: none; 
 }
 
+h1 {
+    font-family: 'Bungee Inline', cursive;
+    color: #BF0426;
+}
+
+h2, h3 {
+    color: #BF0426; 
+}
+
 a {
     text-decoration: none;
     color: #BF0426;
@@ -21,13 +31,53 @@ a {
 .hero {
     background-image: url("./images/ella-olsson-4dQiaWKiL-Y-unsplash.jpg");
     background-size: cover;
-    height: 900px;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
-    font-family: 'Bungee Inline', cursive;
-    color: #BF0426;
+.about {
+    background-color: #BFB304;
+    width: 700px;
+    display: flex;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    margin-top:-75px;
+    height: 100px;
+    opacity: .8;
+}
+
+.recipes {
+    margin: 0 50px 
+}
+
+.recipe-card {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    
+}
+
+.recipe-card img {
+    min-width: 200px; 
+    max-width: 300px;
+}
+
+button {
+    background-color: #BFB304;
+    color: #FFFFFF;
+    padding: 15px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:hover {
+    background-color: #BF0426;
+}
+
+.gallery img {
+    height: 200px;
+    width: 300px;
 }
