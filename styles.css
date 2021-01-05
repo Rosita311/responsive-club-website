@@ -123,14 +123,20 @@ footer {
       max-width: 100%;
    }
 
+   .recipes, .events {
+       text-align: center;
+   }
+
    .buttons {
        display: flex;
        justify-content: center;
    }
 
+
    .recipe-card, .events-card {
     flex-wrap: wrap;
     justify-content: center;
+    text-align: start;
    }
 
    .gallery {
