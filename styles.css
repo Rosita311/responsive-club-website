@@ -139,9 +139,7 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-    p, li, button {
-        font-size: 1em;
-    }
+    
     nav ul {
         display: flex;
         flex-direction: column;
@@ -155,6 +153,10 @@ footer {
     .about {
         max-width: 100%;
         padding: 50px 20px;
+    }
+
+    .text-card {
+        margin: 0 20px 
     }
 
     .footer {
