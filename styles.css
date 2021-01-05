@@ -1,6 +1,7 @@
 body {
     background-color: #D9D0BF;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     margin: auto;
 }
 
@@ -32,6 +33,7 @@ a {
     background-image: url("./images/ella-olsson-4dQiaWKiL-Y-unsplash.jpg");
     background-size: cover;
     height: 750px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +41,9 @@ a {
 
 .about {
     background-color: #BFB304;
-    width: 700px;
+    max-width: 700px;
     display: flex;
-    text-align: center;
+    justify-content: center;
     padding: 25px;
     margin: auto;
     margin-top:-75px;
@@ -70,6 +72,8 @@ button {
     padding: 15px;
     border: none;
     font-family: 'Open Sans', sans-serif;
+    width: 150px;
+    margin: 20px 10px;
 }
 
 button:hover {
@@ -89,9 +93,76 @@ button:hover {
 .events-card img {
     width: 300px;
     height: 300px;
+    margin-right: 7px;
 }
 
 footer {
     text-align: center;
     border-top: 1px solid #BFB304;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    h1 {
+        text-align: center;
+    }
+
+    .hero {
+       justify-content: center;
+       width: 100%;
+    }
+
+   .about {
+      align-items: center;  
+      width: 100%;
+   }
+
+   .buttons {
+       display: flex;
+       justify-content: center;
+   }
+
+   .recipe-card, .events-card {
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+   .gallery {
+       flex-wrap: wrap;
+   } 
+}
+
+@media only screen and (max-width: 480px) {
+    p, li, button {
+        font-size: 1em;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        max-width: 100%;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+    }
 }
